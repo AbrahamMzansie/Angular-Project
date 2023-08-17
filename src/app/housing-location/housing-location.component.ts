@@ -1,5 +1,5 @@
 import { RouterModule } from '@angular/router';
-import { Component , Input, inject } from '@angular/core';
+import { Component , Input, Output, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HousingLocation } from '../housing-location';
 
@@ -13,5 +13,6 @@ import { HousingLocation } from '../housing-location';
 })
 export class HousingLocationComponent {
   @Input() housingLocation!: HousingLocation;
- 
+  @Input() imageURL : string = "";
+  
 }
